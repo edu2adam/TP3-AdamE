@@ -11,7 +11,6 @@ public class Principal {
         System.out.println(" 4. Ejercicio 4");
         System.out.println(" 5. Ejercicio 5");
         System.out.println(" 6. Ejercicio 6");
-        //int opcion = scanner.nextInt();
         int opcion= new Scanner(System.in).nextInt();
         switch (opcion) {
             case 1:
@@ -37,6 +36,5 @@ public class Principal {
                 System.out.println("Opcion no valida");
         }
         scanner.close();
-
     }
 }

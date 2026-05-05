@@ -1,5 +1,4 @@
-package resol.AdamE;   // Reemplaza "AdamE" por tu apellido e inicial
-
+package resol.AdamE;
 import java.util.Scanner;
 
 public class Ejercicio3 {

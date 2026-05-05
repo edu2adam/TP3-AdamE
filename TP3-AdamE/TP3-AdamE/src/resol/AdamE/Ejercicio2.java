@@ -1,5 +1,4 @@
-package resol.AdamE;   // Cambia "AdamE" por tu apellido e inicial
-
+package resol.AdamE;
 import java.util.Random;
 import java.util.Scanner;
 
