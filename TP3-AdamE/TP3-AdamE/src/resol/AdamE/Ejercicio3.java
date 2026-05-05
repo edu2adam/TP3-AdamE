@@ -17,23 +17,13 @@ public class Ejercicio3 {
         System.out.printf("El carácter '%c' representa el %.2f%% del texto.\n", caracter, porcentaje);
     }
 
-    /**
-     * Método estático que busca todas las posiciones de un carácter en una cadena
-     * (ignorando mayúsculas/minúsculas) y muestra los índices encontrados.
-     * 
-     * @param cadena Texto donde buscar
-     * @param c      Carácter a buscar
-     * @return Porcentaje de apariciones del carácter (0.0 si no aparece)
-     */
     public static double buscarCaracter(String cadena, char c) {
-        // Convertir toda la cadena y el carácter a minúsculas (o mayúsculas) para ignorar case
         String cadenaLower = cadena.toLowerCase();
         char cLower = Character.toLowerCase(c);
 
         int contador = 0;
         StringBuilder posiciones = new StringBuilder();
 
-        // Recorrer la cadena y guardar índices
         for (int i = 0; i < cadenaLower.length(); i++) {
             if (cadenaLower.charAt(i) == cLower) {
                 contador++;
@@ -51,7 +41,6 @@ public class Ejercicio3 {
             System.out.println("El carácter '" + c + "' aparece en las posiciones: " + posiciones.toString());
         }
 
-        // Calcular porcentaje (evitar división por cero)
         if (cadena.length() == 0) {
             return 0.0;
         }

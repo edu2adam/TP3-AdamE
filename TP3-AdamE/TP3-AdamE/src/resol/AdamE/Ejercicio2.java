@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Ejercicio2 {
 
-    // Método que ejecuta la lógica del ejercicio
+
     public static void ejecutar() {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
@@ -21,8 +21,8 @@ public class Ejercicio2 {
             }
         }
 
-        // Mostrar la matriz (opcional, para verificar)
-        System.out.println("\nMatriz generada:");
+
+        System.out.println("\nMatriz generada:");// Mostrar la matriz 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 System.out.printf("%4d", matriz[i][j]);
@@ -37,11 +37,11 @@ public class Ejercicio2 {
         System.out.println("\nSuma de la diagonal principal: " + sumaPrincipal);
         System.out.println("Suma de la diagonal secundaria: " + sumaSecundaria);
 
-        // Determinar la mayor suma usando Math.max()
+        
         determinarMayorSuma(sumaPrincipal, sumaSecundaria);
     }
 
-    // a) Suma de la diagonal principal (elementos [i][i])
+    
     public static int sumarDiagonalPrincipal(int[][] matriz) {
         int suma = 0;
         for (int i = 0; i < matriz.length; i++) {
@@ -50,7 +50,7 @@ public class Ejercicio2 {
         return suma;
     }
 
-    // b) Suma de la diagonal secundaria (elementos [i][N-1-i])
+    
     public static int sumarDiagonalSecundaria(int[][] matriz) {
         int suma = 0;
         int n = matriz.length;
@@ -60,7 +60,7 @@ public class Ejercicio2 {
         return suma;
     }
 
-    // c) Determinar cuál suma es mayor usando Math.max()
+    
     public static void determinarMayorSuma(int sumaP, int sumaS) {
         int mayor = Math.max(sumaP, sumaS);
         if (mayor == sumaP && mayor == sumaS) {
