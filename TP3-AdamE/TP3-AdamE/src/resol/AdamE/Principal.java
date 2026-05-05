@@ -26,12 +26,12 @@ public class Principal {
             case 4:
                 Ejercicio4.ejecutar();
                 break;
-            /*case 5:
+            case 5:
                 Ejercicio5.ejecutar();
                 break;
             case 6:
                 Ejercicio6.ejecutar();
-                break;*/
+                break;
         
             default:
                 System.out.println("Opcion no valida");
